@@ -1,5 +1,6 @@
 package controller.thread;
 
+import controller.util.CollisionDetect;
 import controller.util.ControleTempo;
 import view.Janela;
 
@@ -21,7 +22,7 @@ public class ThreadJogo extends Thread {
 	public void run() {
 		while (true) {
 			ControleTempo.esperar();
-			
+			CollisionDetect.detectarColisoes(tb);
 			checarReset();
 		}
 	}

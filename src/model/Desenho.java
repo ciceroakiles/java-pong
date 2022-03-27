@@ -1,6 +1,7 @@
 package model;
 
 import java.awt.Color;
+import java.awt.Rectangle;
 
 public class Desenho {
 
@@ -52,5 +53,7 @@ public class Desenho {
 		return color;
 	}
 	
-	
+	public Rectangle getRetangulo() {
+		return new Rectangle(this.x, this.y, this.width, this.height);
+	}
 }
