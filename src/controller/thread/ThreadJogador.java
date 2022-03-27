@@ -46,11 +46,9 @@ public class ThreadJogador extends Thread {
 			public void keyPressed(KeyEvent e) {
 				if (e.getKeyCode() == k1) {
 					moverCima();
-					System.out.println("Pressionou tecla W");
 				}
 				if (e.getKeyCode() == k2) {
 					moverBaixo();
-					System.out.println("Pressionou tecla S");
 				}
 			}
 		});
