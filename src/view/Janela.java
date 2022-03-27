@@ -5,6 +5,8 @@ import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import controller.thread.ThreadJogo;
 import model.Desenho;
 import model.DesenhoGrupo;
 
@@ -21,6 +23,8 @@ public class Janela {
 		definirDesenhos();
 		criarGamePanel();
 		criarFrame();
+		ThreadJogo tj = new ThreadJogo();
+		tj.start();
 		while (true) {
 			Janela.getGamePanel().repaint();
 		}
