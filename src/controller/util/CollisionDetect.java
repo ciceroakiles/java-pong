@@ -15,7 +15,6 @@ public class CollisionDetect {
 			case 3: collEsqBaixo(tb); break;
 		}
 		if (playerCollide) {
-			System.out.println("Colidiu com jogador");
 			playerCollide = false;
 		}
 	}

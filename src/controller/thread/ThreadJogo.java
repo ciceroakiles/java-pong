@@ -13,7 +13,7 @@ public class ThreadJogo extends Thread {
 	public ThreadJogo() {
 		tb = new ThreadBola(Janela.getBola());
 		tb.start();
-		ThreadJogador tp1 = new ThreadJogador(Janela.getRectP1());
+		ThreadJogador tp1 = new ThreadJogador(Janela.getRectP1(), 0x57, 0x53);
 		tp1.start();
 		ThreadJogador tp2 = new ThreadJogador(Janela.getRectP2());
 		tp2.start();

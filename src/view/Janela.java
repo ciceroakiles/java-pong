@@ -50,7 +50,7 @@ public class Janela {
 		return ball;
 	}
 	
-	private static JPanel getGamePanel() {
+	public static JPanel getGamePanel() {
 		return gamePanel;
 	}
 
